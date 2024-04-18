@@ -18,5 +18,5 @@ The unpack and repack scripts should do the heavy lifting- they're adapted from 
 2. Use something like `patch -s -p0 < woman.diff` to update the stuff you just unpacked. Haven't tested this myself, but it should work. If it doesn't, the links in the last numbered list have some good guidance on making changes. You can also do whatever you want here, this is the only step that's specific to doing the specific weird thing I want to do. The other two should be generally helpful.
 3. Repack it with `repack.sh`. Note that `repack.sh` looks for a directory called `isofiles` and that `isohdpfx.bin` file in the current directory.
 4. If you have qemu installed, `start-vm` helps a lot to test things before you write it to a flash drive.
-5. `dd if=https://stackoverflow.com/a/9982282 of=/dev/sdX bs=4096 status=progress` to write it your flash drive.
+5. `dd if=debian-12.5.0-amd64-women.iso of=/dev/sdX bs=4096 status=progress` to write it your flash drive.
 
