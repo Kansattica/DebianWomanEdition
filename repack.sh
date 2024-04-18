@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # The example names get mapped to their roles here
-orig_iso="$HOME"/debian-women/debian-12.5.0-amd64-DVD-1.iso
-new_files="$HOME"/debian-women/isofiles
-new_iso="$HOME"/debian-women/debian-12.5.0-amd64-women.iso
+orig_iso=./debian-12.5.0-amd64-DVD-1.iso
+new_files=./isofiles
+new_iso=./debian-12.5.0-amd64-women.iso
 mbr_template=isohdpfx.bin
 
 # Extract MBR template file to disk
