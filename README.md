@@ -7,6 +7,8 @@ I'll hopefully have time to make this beter later, but the end result is that yo
 
 ### If you just want my premade ISO to play with:
 
+We have [an official mirror!](https://a.en0.io/assets/ISO/debian-12.5.0-amd64-women.iso)
+
 Feel free to download the [torrent](https://github.com/Kansattica/DebianWomanEdition/raw/princess/debian-12.5.0-amd64-women.iso.torrent) in this repository or use [the equivalent magnet link](https://github.com/Kansattica/DebianWomanEdition/blob/princess/magnet.url). Sorry about the indirection- Github doesn't like making clickable magnet links. I would upload it somewhere if I could, but, alas. Bandwidth. Get in touch if you want to be an official Debian: Woman Edition mirror.
 
 
