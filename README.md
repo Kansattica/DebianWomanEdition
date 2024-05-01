@@ -3,7 +3,7 @@
 
 This is what I used to make my seminal [Women Will Literally Install Debian](https://www.youtube.com/watch?v=Dyz6vOn8qn8) video. 
 
-I'll hopefully have time to make this beter later, but the end result is that you wind up a with a customized Debian ISO that boots, automatically installs to a RAM disk, and restarts to start the whole process over again. It's the logical endpoint of a joke I started about "women will literally install Debian" starting from the time I, a woman, installed Debian. (I [sell stickers](https://princess.software/order/), by the way.) The point here is to get philosophical. If women will literally install Debian, if the computer installs Debian automatically, does that make it a woman? Makes you think.
+I'll hopefully have time to make this beter later, but the end result is that you wind up a with a customized Debian ISO that boots, automatically installs to a RAM disk, and restarts to start the whole process over again. It's the logical endpoint of a joke I started about "women will literally install Debian" starting from the time I, a woman, installed Debian. (I [sell stickers](https://princess.software/order/), by the way.) The point here is to get philosophical. Given that women will literally install Debian, if the computer installs Debian automatically, does that make it a woman? Makes you think.
 
 ### If you just want my premade ISO to play with:
 
