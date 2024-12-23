@@ -27,6 +27,6 @@ The unpack and repack scripts should do the heavy lifting- they're adapted from 
 1. Unpack your install media (only tested with [debian-12.5.0-amd64-DVD-1.iso](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/)) with `unpack.sh`.
 2. Use something like `patch -s -p0 < woman.diff` to update the stuff you just unpacked. Haven't tested this myself, but it should work. If it doesn't, the links in the last numbered list have some good guidance on making changes. You can also do whatever you want here, this is the only step that's specific to doing the specific weird thing I want to do. The other two should be generally helpful. Specifically, you probably have to [regenerate md5sum.txt](https://wiki.debian.org/DebianInstaller/Preseed/EditIso#Regenerating_md5sum.txt) manually or with my handy calculate-md5.sh shell script.
 3. Repack it with `repack.sh`. Note that `repack.sh` looks for a directory called `isofiles` and that `isohdpfx.bin` file in the current directory.
-4. If you have qemu installed, `start-vm` helps a lot to test things before you write it to a flash drive.
+4. If you have qemu installed, `start-vm` helps a lot to test things before you write it to a flash drive. `start-vm` tests the UEFI boot-- for MBR, try `qemu-system-x86_64 -cdrom debian-12.5.0-amd64-women.iso -enable-kvm -cpu host -smp cores=4,threads=1 -m 4096`
 5. `dd if=debian-12.5.0-amd64-women.iso of=/dev/sdX bs=4096 status=progress` to write it your flash drive.
 
