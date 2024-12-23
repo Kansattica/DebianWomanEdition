@@ -22,7 +22,7 @@ This is not a super elegant way to do what I did, but the basic idea is:
 3. Tell the kernel to look there on startup (this involves editing the GRUB config to put Automated Install first, by the way. Lost a lot of time on that one.)
 4. That should about do it! Enjoy Debian!
 
-The unpack and repack scripts should do the heavy lifting- they're adapted from the excellent writing on the subject [provided by the Debian project](https://wiki.debian.org/RepackBootableISO). I only tested these for amd64 UEFI, so you're on your own for everything else. The idea is that you should be able to:
+The unpack and repack scripts should do the heavy lifting- they're adapted from the excellent writing on the subject [provided by the Debian project](https://wiki.debian.org/RepackBootableISO). I only tested these for amd64 UEFI (and now amd64 MBR!), so you're on your own for everything else. The idea is that you should be able to:
 
 1. Unpack your install media (only tested with [debian-12.5.0-amd64-DVD-1.iso](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/)) with `unpack.sh`.
 2. Use something like `patch -s -p0 < woman.diff` to update the stuff you just unpacked. Haven't tested this myself, but it should work. If it doesn't, the links in the last numbered list have some good guidance on making changes. You can also do whatever you want here, this is the only step that's specific to doing the specific weird thing I want to do. The other two should be generally helpful. Specifically, you probably have to [regenerate md5sum.txt](https://wiki.debian.org/DebianInstaller/Preseed/EditIso#Regenerating_md5sum.txt) manually or with my handy calculate-md5.sh shell script.
