@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # The example names get mapped to their roles here
 orig_iso=./debian-12.5.0-amd64-DVD-1.iso
