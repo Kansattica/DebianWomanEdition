@@ -15,7 +15,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in
       {
-        devShells.default = pkgs.mkShell { packages = [ pkgs.bashInteractive ]; };
+        devShells.default = pkgs.mkShell { packages = [ pkgs.bashInteractive pkgs.xorriso pkgs.qemu_full ]; };
       }
     );
 }
